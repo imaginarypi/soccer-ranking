@@ -20,8 +20,8 @@ Testing:
 TBD:
 1. Did not spend a lot of time on various cases except base ones.
 2. No validation as the question mentioned valid input only.
-3. I would split this into multiple files.
-4. I would comment better on each method and specify more details.
+3. Split this and ut files into multiple files for class and reorg.
+4. Comment better on each method and specify more details.
   Used decent naming convention and sensible names.
 5. Indentation needs improvement.
 
@@ -40,6 +40,9 @@ import re
 
 class Parser(object):
   """
+  Parse the input string and populate hash map. 
+  Before adding to hash map also, update the scores based
+  on win/loss/tie.
   """
   def __init__(self):
     """
